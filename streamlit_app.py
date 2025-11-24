@@ -1,3 +1,10 @@
+st.set_page_config(
+    page_title="FFT-based Chord Analyzer",  
+    page_icon="♫", 
+    layout="wide"
+)
+st.title("FFT-based Automatic Chord Recognition")
+st.markdown("### Identify Chords from Audio Signals by Analyzing the Fourier Transform.")
 import streamlit as st
 import numpy as np
 import librosa
