@@ -1,8 +1,4 @@
-st.set_page_config(
-    page_title="FFT-based Chord Analyzer",  
-    page_icon="♫", 
-    layout="wide"
-)
+
 st.title("FFT-based Automatic Chord Recognition")
 st.markdown("### Identify Chords from Audio Signals by Analyzing the Fourier Transform.")
 import streamlit as st
@@ -14,7 +10,11 @@ from scipy.signal import find_peaks
 from collections import defaultdict
 import io # Add library for Streamlit file processing.
 
-
+st.set_page_config(
+    page_title="FFT-based Chord Analyzer",  
+    page_icon="♫", 
+    layout="wide"
+)
 # --- (1) define function: frequency to MIDI note ---
 def freq_to_midi(frequency):
    """
